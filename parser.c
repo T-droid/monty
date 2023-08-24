@@ -16,15 +16,16 @@ int parser(char *str, int line_number)
 				{"add", f_add},
 				{"nop", f_nop},
 				{"sub", f_sub},
-			/**	{"div", f_div},
+				{"div", f_div},
 				{"mul", f_mul},
 				{"mod", f_mod},
 				{"pchar", f_pchar},
 				{"pstr", f_pstr},
 				{"rotl", f_rotl},
 				{"rotr", f_rotr},
-				{"queue", f_queue},
-				{"stack", f_stack},*/
+				/**{"queue", f_queue},
+				 * {"stack", f_stack},
+				 */
 				{NULL, NULL}
 				};
 	char *token;
@@ -32,6 +33,9 @@ int parser(char *str, int line_number)
 
 	token = strtok(str, " \t\a");
 	arg = strtok(NULL, " \t\a");
+
+	if (token[0] == '#')
+		return (0);
 
 	while (opst[i].opcode)
 	{
