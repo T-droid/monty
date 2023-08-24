@@ -3,7 +3,7 @@
 
 /**
  * f_push - pushes data onto the stack
- * @Head: top of the stack
+ * @head: top of the stack
  * @counter: line number
  */
 void f_push(stack_t **head, unsigned int counter)
@@ -31,7 +31,7 @@ void f_push(stack_t **head, unsigned int counter)
 	addnode(n);
 }
 /**
- * addNode - adds a node with data to the list
+ * addnode - adds a node with data to the list
  * @data: data to be pushed to the linked list
  * Return: void
  */
@@ -52,7 +52,7 @@ stack_t *addnode(int data)
 
 /**
  * f_pall - prints the stack
- * @header: stack top
+ * @head: stack top
  * @counter: line number
  */
 void f_pall(stack_t **head, unsigned int counter)

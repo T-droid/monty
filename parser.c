@@ -4,7 +4,7 @@ char *arg = NULL;
 /**
  * parser - determines the opcodes
  * @str: opcode line in a file
- * @lin_number: number of the opcode line
+ * @line_number: number of the opcode line
  * Return: 0 on success and -1 on failure
  */
 int parser(char *str, int line_number)
